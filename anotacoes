@@ -1,0 +1,227 @@
+Classes no Bootstrap4:
+
+Essas classes ja vem padrao do bootstrap, como:
+
+classes display e h1, h2, h3... servem para formatação de texto, para deixar maior ou menor
+display-1, display-2...
+
+
+text-monospace para deixar o texto monoespaçado
+font-weight-bold para deixar o texto em negrito
+font-weight-normal para deixar o texto normal, sem mudar
+font-italic para deixar o texto em italico
+text-uppercase para deixar o texto maiusculo
+text-lowercase para deixar o texto minusculo
+text-capitalize para deixar a primeira letra de cada palavra maiuscula
+
+classes de alinhamento:
+text-right deixa o texto a direita
+text-left deixa o texto a esquerda
+text-center deixa o texto no centro
+
+
+Bloco de citação:
+<blockquote>
+    <p>Esse é o bloco de citação</p>
+    <footer>por
+        <cite>João Henrique Portela</cite>
+    </footer>
+</blockquote>
+tag cite para destacar o texto
+classe de citação:
+blockquote deixa o texto com formato e tamanho diferente
+blockquote-footer deixa o texto com formato diferente e um traço
+
+
+text-truncate para corta o texto, deixar ele com tres pontos ao fim significando que ainda tem mais texto, e vai aparecendo assim que vai aumentando a tela, usa-se em uma tag p por exemplo
+
+list-unstyled para tirar o estilo da lista, coloa-se na tag ul
+list-inline usa-se no ul para deixar a lista em linha
+list-inline-item usa-se em cada tag li da lista para deixar a lista em linha
+
+
+sufixos para usar dependendo do tamanho da tela:
+SM = small, >=576px
+MD = medium, >=768px
+LG = large, >=992px
+XL = extra large, >=1200px
+
+class d-inline para fazer o texto bloco ficar inline
+
+class="d-block" para fazer o texto inline virar bloco
+
+class bg-success para colocar um background color
+
+class="d-inline-block" faz com que o texto seja inline so que como blocos
+
+inline nao se consegue definir margin e padding superior, nem largura, ao contrario de block
+
+
+class float-left serve para flutuar um bloco para a esquerda
+class float-right serve para flutuar um bloco para a direita, quando usa flutuação os elementos que estao flutuando saem do fluxo normal
+class float-none para fazer o bloco nao flutuar
+
+
+class clearfix: no elemendo pai dos elementos que estao sendo flutuados usa-se a classe clearfix, para ajeitar o fluxo
+
+class fixed-top para deixar um bloco fixo no topo da tela, mesmo se descer a barra de rolagem
+class fixed-bottom para deixar um bloco fixo no bottom da tela, mesmo se descer a barra de rolagem 
+
+
+class="float-sm-right" para fazer o elemento flutuar a esquerda, para telas com mais de 576px
+class="float-md-right" para fazer o elemento flutuar a esquerda, para telas com mais de 768px
+class="float-lg-right" para fazer o elemento flutuar a esquerda, para telas com mais de 992px
+class="float-xl-right" para fazer o elemento flutuar a esquerda, para telas com mais de 1200px
+
+
+!!!!class sticky: para uma lista inline, pode usar a classe sticky para colar essa lista no topo quando descer a barra de rolagem, quando o topo chegar nessa lista, ela ficara colada no topo ate o fim... tambem pode ser usada em menus, ou outros tipos de blocos
+
+olhar o apoio-cores-backgound para ver classes de cores, como text-primary, text-secondary, text-success ou backgrounds, como bg-primary, text-success, bg-info etc 
+
+
+classes:
+mt -> Margin Top
+mb -> Margin Bottom
+ml -> Margin Left
+mr -> Margin Right
+mx -> Margin no eixo x (horizontal) esquerda/direita
+my -> Margin no eixo y (vertical) top/bottom
+m  -> Margin em todos os lados
+Valor a definir (0 até 5)
+exemplo: mt-0 ou mt-1 ou ml-4
+
+pt -> Padding Top
+pb -> Padding Bottom
+pl -> Padding Left
+pr -> Padding Right
+px -> Padding no eixo x (horizontal) esquerda/direita
+py -> Padding no eixo y (vertical) top/bottom
+p  -> Padding em todos os lados
+Valor a definir (0 até 5)
+
+
+tamanhos bordas:
+class w-25, ocupa 25% da area total, width 25%
+class w-50, ocupa 50% da area total, width 50%
+class w-75, ocupa 75% da area total, width 75%
+class w-100, ocupa 100% da area total, width 100%
+class w-auto, ocupa o espaçamento de forma automatica
+
+o mesmo se aplica para height, usando height-numero
+
+class border para colocar borda em todo o elemento
+class border-top para colocar borda no topo do elemento
+class border-bottom para colocar borda no bottom do elemento
+class border-left para colocar borda no left do elemento
+class border-right para colocar borda no right do elemento
+
+Cores de bordas:
+border-<cor>: primary, secondary, success, info, warning, danger, light, dark, white
+exemplo: class="border-primary"
+
+Border Radius: usa-se para arredondar o elemento
+opções: rounded, rounded-top, rounded-right, rounded-right, rounded-left, rounded-circle
+exemplo: class="rounded"
+
+
+
+!!!!Aulas 111 e 112 muito importantes sobre media queries
+
+Como criar diversos tipos de botoes, olhar no file apop-botoes.html
+class btn é a padrao, entra pra todos os botoes
+
+
+!!!!Para fazer um botao dropdown:
+<div class="dropdown">
+    <button class="btn btn-success dropdown-toggle" 
+    data-toggle="dropdown" type="button">
+        Clique
+    </button>
+    <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">Link 1</a>
+        <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item">Link 2</a>
+        <a href="#" class="dropdown-item">Link 3</a>
+    </div>
+</div>
+aula 116 ensina a fazer um dropdown tambem    
+    
+    
+    
+class="dropdown-divider"
+serve como divisor entre as opcoes dentro do menu quando desce o dropdown
+
+
+class nav-pills serve para arredondar um item do menu de navegação, coloca a classe no ul da lista
+class nav-tabs serve para colocar uma borda em um item do menu de navegação, coloca a classe no ul da lista
+
+class justify-content-center para alinhar no centro
+class justify-content-end para alinhar no fim, lado direito
+
+
+class flex-colum para deixar a navegação em vertical ao inves de horizontal
+
+class disabled deixa o item inativo, mudando a cor
+class active deixa o item ativo, mudando a cor do item e o background
+
+class navbar-expand-sm para deixar o menu na horizontal, alem de ser responsavel pela responsividade do menu
+olhar na linha 45 do apoio-barra-navgeacoes
+
+class="navbar-brand" define a logo da navbar
+
+class navbar-color para definir a cor da letra da navbar
+
+class ml-numero para definir a margin left 
+class ml-auto para fazer o conteudo ir para a direita, definindo a margin left automatica
+
+!!!!!Barra de navegação responsivo aula 115
+
+
+readonly usa-se como um atributo no input para deixa-lo cinza
+
+
+!!!no arquivo apoio-alertas.html ensina como fechar um alerta, interessante
+
+!!!Estudar como se faz paginação quando aprender banco de dados
+
+
+class sr-only, significa screen only que serve para fazer algo sumir da tela e ficar "livel" apenas para os leitores de tela
+
+
+
+Site interessante para fazer teste com imagens aleatorias, 
+!!!!!https://unsplash.com/developers
+coloca na internet esse link https://source.unsplash.com/random/600x200 e sera gerada uma imagem aleatoria de tamanho 600 por 200, podendo ser qualquer valor no lugar desses
+
+para colocar no projeto usa-se <img class="card-img-bottom" src="https://source.unsplash.com/random/600x200">
+
+
+olhar o arquivo cartoes-parte1, muito interessante para ver cartoes sobrepostos, cartao com imagens, cartao com colunas etc
+!!!!classe card-colum muito interessante
+
+
+Jumboutron cria uma area de destaque
+
+
+classe display-x da um destaque a um texto de head em geral
+classe lead da um destaque a um texto de p em geral
+classe media faz com que um bloco fique do lado de outro bloco, olhar no apoio-jumbotron em Estrutura para Imagens
+
+
+
+
+!!!Aula 128 muito interessante sobre o sistema de grids, como trabalhar usando col-x, colunas nas divs
+
+
+class offset-x ou offset-md-x, serve para aplicar um espaçamento no elemento, faz um bloco pular x colunas
+pode ser lg, sm e outros no lugar do md
+
+
+
+
+
+
+
+
+
+
